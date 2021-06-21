@@ -1,0 +1,18 @@
+{
+	"profiles": {
+		"Service": {
+			"applicationUrl": "https://localhost:6001",
+			"commandName": "Project",
+			"dotnetRunMessages": "true",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		"Docker": {
+			"commandName": "Docker",
+			"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+			"publishAllPorts": true,
+			"useSSL": true
+		}
+	}
+}

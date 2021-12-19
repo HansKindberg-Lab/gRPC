@@ -1,6 +1,6 @@
 {
 	"profiles": {
-		"Client": {
+		"Kestrel": {
 			"applicationUrl": "https://localhost:5001",
 			"commandName": "Project",
 			"dotnetRunMessages": "true",

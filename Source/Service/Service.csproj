@@ -6,8 +6,8 @@
 		<UserSecretsId>d686da75-6a95-415a-b61c-876de9a746ea</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
-		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.41.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Protobuf Include="Protos\greet.proto" GrpcServices="Server" />

@@ -1,6 +1,6 @@
 # gRPC
 
-A gRPC example. The gRPC-service returns a Dictionary<string, IEnumerable<string>>, sort of. It has to be implemented with a certain proto.
+A gRPC example. The gRPC-service returns a Dictionary<string, IEnumerable&lt;string&gt;>, sort of. It has to be implemented with a certain proto.
 
 ## 1 NuGet
 

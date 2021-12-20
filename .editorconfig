@@ -280,6 +280,7 @@ resharper_suggest_var_or_type_elsewhere_highlighting=hint
 resharper_suggest_var_or_type_simple_types_highlighting=hint
 
 # Suppress
+dotnet_diagnostic.CA2007.severity = none
 dotnet_diagnostic.IDE0011.severity = none
 dotnet_diagnostic.IDE0046.severity = none
 dotnet_diagnostic.IDE0055.severity = none
@@ -387,7 +388,7 @@ dotnet_diagnostic.CA1828.severity = error
 dotnet_diagnostic.CA1829.severity = error
 dotnet_diagnostic.CA2000.severity = error
 dotnet_diagnostic.CA2002.severity = error
-dotnet_diagnostic.CA2007.severity = error
+#dotnet_diagnostic.CA2007.severity = error
 dotnet_diagnostic.CA2008.severity = error
 dotnet_diagnostic.CA2009.severity = error
 dotnet_diagnostic.CA2010.severity = error

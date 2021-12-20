@@ -1,8 +1,38 @@
-﻿@{
-	ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home"; }
+@model HomeViewModel
 
-<div class="text-center">
-	<h1 class="display-4">Welcome</h1>
-	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="display-4 text-center">Home</h1>
+@if(Model.Dictionary.Any())
+{
+	<div class="card">
+		<div class="card-header">
+			Dictionary from grpc-service
+		</div>
+		<div class="card-body">
+			<ul>
+				@foreach(var (key, value) in Model.Dictionary)
+				{
+					<li>
+						<strong>@key</strong>
+						@{ var list = value.ToArray(); }
+						@if(list.Any())
+						{
+							<ul>
+								@foreach(var item in list)
+								{
+									<li>@item</li>
+								}
+							</ul>
+						}
+					</li>
+				}
+			</ul>
+		</div>
+	</div>
+}
+else
+{
+	<div class="alert alert-warning">
+		<p>No dictionary-items.</p>
+	</div>
+}

@@ -1,18 +1,24 @@
 # gRPC
 
-## NuGet
+A gRPC example. The gRPC-service returns a Dictionary<string, IEnumerable<string>>, sort of. It has to be implemented with a certain proto.
 
-### Server
+## 1 NuGet
+
+### 1.1 Server
 
 - Grpc.AspNetCore
 
-### Client
+### 1.2 Client
 
 - Google.Protobuf
 - Grpc.Net.Client
 - Grpc.Tools
 
-## Information
+## 2 Bootstrap
+
+The css- and js-bundles in the solution are downloaded from https://getbootstrap.com/docs/5.1/getting-started/download/.
+
+## 3 Information
 
 - https://developers.google.com/protocol-buffers/docs/overview
 - [The future of gRPC in C# belongs to grpc-dotnet](https://grpc.io/blog/grpc-csharp-future/)

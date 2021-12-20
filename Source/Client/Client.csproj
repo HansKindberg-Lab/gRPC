@@ -2,6 +2,7 @@
 	<PropertyGroup>
 		<CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<NoWarn>IDE0130</NoWarn>
 		<TargetFramework>net5.0</TargetFramework>
 		<UserSecretsId>d14da4b6-8637-4118-8ecf-618751154c80</UserSecretsId>
 	</PropertyGroup>
@@ -14,5 +15,8 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.13" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="..\Service\Protos\ListDictionary.proto" GrpcServices="Client" Link="Protos\ListDictionary.proto" />
 	</ItemGroup>
 </Project>

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Service";
+
+package service;
+
+message Request {}
+
+message Response {
+	message StringCollection {
+		repeated string items = 1;
+	}
+	map<string, StringCollection> list_dictionary = 1;
+}
+
+service ListDictionary {
+	rpc Get (Request) returns (Response);
+}

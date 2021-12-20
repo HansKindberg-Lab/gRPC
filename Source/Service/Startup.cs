@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Service.Services;
 
 namespace Service
 {
@@ -39,7 +38,7 @@ namespace Service
 				.UseRouting()
 				.UseEndpoints(endpoints =>
 				{
-					endpoints.MapGrpcService<GreeterService>();
+					endpoints.MapGrpcService<ListDictionaryService>();
 
 					endpoints.MapGet("/", async context =>
 					{

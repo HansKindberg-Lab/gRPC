@@ -1,4 +1,5 @@
 using System;
+using Client.Models.Clients;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,9 +40,7 @@ namespace Client
 				.UseAuthorization()
 				.UseEndpoints(endpoints =>
 				{
-					endpoints.MapControllerRoute(
-						name: "default",
-						pattern: "{controller=Home}/{action=Index}/{id?}");
+					endpoints.MapDefaultControllerRoute();
 				});
 		}
 
@@ -49,6 +48,8 @@ namespace Client
 		{
 			if(services == null)
 				throw new ArgumentNullException(nameof(services));
+
+			services.AddSingleton<IListDictionaryClient, ListDictionaryClient>();
 
 			services.AddControllersWithViews();
 		}

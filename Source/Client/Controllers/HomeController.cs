@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Client.Models.Clients;
-using Client.Models.ViewModels;
+using Client.Models.Views;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

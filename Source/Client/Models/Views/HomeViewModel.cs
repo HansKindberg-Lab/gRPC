@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Client.Models.ViewModels
+namespace Client.Models.Views
 {
 	public class HomeViewModel
 	{
